@@ -33,7 +33,7 @@ nmap <leader>x <Action>(HideAllWindows)
 nmap <leader>h <Action>(HighlightUsagesInFile)
 nmap <leader>u <Action>(FindUsages)
 
-" split window
+" set tab placement none, max tab 1
 nmap <leader>wv <Action>(SplitVertically)
 nmap <leader>wq <Action>(CloseEditor)
 nmap <leader>ww <Action>(NextSplitter)
