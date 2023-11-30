@@ -16,6 +16,9 @@ vmap K :m '<-2<CR>gv=gv
 
 nmap U <C-R>
 
+" clear search highlight
+nmap <silent> <C-l> :nohl<CR><C-l>
+
 " Don't use Ex mode, use Q for formatting.
 map Q gq
-
+ 
