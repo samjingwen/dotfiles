@@ -17,9 +17,6 @@ set exchange
 Plug 'machakann/vim-highlightedyank'
 Plug 'terryma/vim-multiple-cursors
 
-" clear search highlight
-nmap <silent> <C-l> :nohl<CR><C-l>
-
 nmap gi <Action>(GotoImplementation)
 nmap <leader>r <Action>(RenameElement)
 nmap <leader>c <Action>(Stop)
@@ -37,10 +34,14 @@ nmap <leader>h <Action>(HighlightUsagesInFile)
 nmap <leader>u <Action>(FindUsages)
 
 " split window
-nmap <leader>sv <Action>(SplitVertically)
-nmap <leader>sc <Action>(Unsplit)
-nmap <leader>v <Action>(NextSplitter)
+nmap <leader>wv <Action>(SplitVertically)
+nmap <leader>wq <Action>(CloseEditor)
+nmap <leader>ww <Action>(NextSplitter)
 
 map mc <Plug>NextWholeOccurrence
-map mn <Plug>NextOccurrence
+map mc <Plug>NextOccurrence
+map mx <Plug>SkipOccurrence
+
+
+
 
