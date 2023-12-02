@@ -3,7 +3,8 @@ let mapleader=' '
 set number
 set relativenumber
 
-set scrolloff=8
+set scrolloff=10
+set sidescrolloff=10
 
 set ignorecase
 set smartcase
