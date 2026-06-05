@@ -1,0 +1,94 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      // "shift shift": "file_finder::Toggle"
+    },
+  },
+  {
+    "context": "Editor && vim_mode == insert",
+    "bindings": {
+      // "j k": "vim::NormalBefore"
+    },
+  },
+  {
+    "context": "VimControl && !menu",
+    "bindings": {
+      "cmd-[": "pane::GoBack",
+    },
+  },
+  {
+    "context": "VimControl && !menu",
+    "unbind": {
+      "ctrl-o": "pane::GoBack",
+    },
+  },
+  {
+    "context": "VimControl && !menu",
+    "bindings": {
+      "cmd-]": "pane::GoForward",
+    },
+  },
+  {
+    "context": "VimControl && !menu",
+    "unbind": {
+      "ctrl-i": "pane::GoForward",
+    },
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-i": "editor::Outdent",
+    },
+  },
+  {
+    "context": "Editor",
+    "unbind": {
+      "cmd-[": "editor::Outdent",
+    },
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-o": "editor::Indent",
+    },
+  },
+  {
+    "context": "Editor",
+    "unbind": {
+      "cmd-]": "editor::Indent",
+    },
+  },
+  {
+    "context": "vim_mode == normal || vim_mode == visual",
+    "bindings": {
+      "s": "vim::PushSneak",
+      "shift-s": "vim::PushSneakBackward",
+    },
+  },
+  {
+    "context": "VimControl && !menu && vim_mode != operator",
+    "bindings": {
+      "w": "vim::NextSubwordStart",
+      "b": "vim::PreviousSubwordEnd",
+      "e": "vim::NextSubwordEnd",
+      "g e": "vim::PreviousSubwordEnd",
+    },
+  },
+  {
+    "context": "VimControl && !menu",
+    "bindings": {
+      "left": "vim::WrappingLeft",
+      "right": "vim::WrappingRight",
+      "h": "vim::WrappingLeft",
+      "l": "vim::WrappingRight",
+    },
+  },
+]
