@@ -48,6 +48,33 @@ do not follow includes unless `--includes` is also supplied, for example:
 git config --global --includes user.name
 ```
 
+## Kitty
+
+Create the Kitty configuration directory:
+
+```sh
+mkdir -p ~/.config
+```
+
+If a Kitty configuration already exists, back it up first:
+
+```sh
+mv ~/.config/kitty ~/.config/kitty.backup
+```
+
+Symlink this repository's Kitty configuration into place:
+
+```sh
+ln -s ~/code/dotfiles/kitty ~/.config/kitty
+```
+
+Verify the symlink and start Kitty:
+
+```sh
+ls -l ~/.config/kitty
+kitty
+```
+
 ## Neovim
 
 Create the Neovim configuration directory:
@@ -65,7 +92,7 @@ mv ~/.config/nvim ~/.config/nvim.backup
 Symlink this repository's Neovim configuration into place:
 
 ```sh
-ln -s ~/code/dotfiles/.config/nvim ~/.config/nvim
+ln -s ~/code/dotfiles/nvim ~/.config/nvim
 ```
 
 Verify the symlink and start Neovim:
