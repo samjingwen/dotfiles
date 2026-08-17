@@ -23,7 +23,7 @@ return {
       end,
       cmd = {
         "jdtls",
-        "--jvm-arg=-javaagent:/Users/samjingwen/.local/share/nvim/lombok.jar",
+        "--jvm-arg=-javaagent:" .. vim.fn.expand("~/.local/share/nvim/lombok.jar"),
       },
     },
   },
